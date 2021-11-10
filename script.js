@@ -68,7 +68,7 @@ function nextPokemon() {
 
             let div = document.getElementById("pokemonInfo");
             let img = document.getElementById('pokemonImg');
-
+            document.getElementById("pokemon").value = "";
             //display only first move of pokemon if he has only one move
             if (data.moves[0].move.name == "transform") {
                 div.innerHTML =
@@ -99,7 +99,7 @@ function nextPokemon() {
 
             let div = document.getElementById("pokemonInfo");
             let img = document.getElementById('pokemonImg');
-
+            document.getElementById("pokemon").value = "";
 
 
             //display only first move of pokemon if he has only one move
@@ -134,6 +134,8 @@ function previousPokemon() {
     pastPokemon = parseInt(pastPokemon);
     pastPokemon--;
     
+    //clear input
+    document.getElementById("pokemon").value = "";
 
 
 
