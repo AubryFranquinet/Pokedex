@@ -122,6 +122,15 @@ function nextPokemon() {
         }
 
         )
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/` + nxtPokemon)
+        .then(response => response.json())
+        .then(data => {
+
+
+            let previousEvolution = document.getElementById("pokemonInfo");
+            previousEvolution.innerHTML +=
+                '<h4> Previous evolution : </h4>' + data.evolves_from_species.name;
+        })
 }
 
 //GET NEXT POKEMON WHEN CLICK ON NEXT BUTTON 
@@ -200,4 +209,13 @@ function previousPokemon() {
         }
 
         )
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/` + pastPokemon)
+        .then(response => response.json())
+        .then(data => {
+
+
+            let previousEvolution = document.getElementById("pokemonInfo");
+            previousEvolution.innerHTML +=
+                '<h4> Previous evolution : </h4>' + data.evolves_from_species.name;
+        })
 }
