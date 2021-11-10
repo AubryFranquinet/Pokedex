@@ -1,7 +1,7 @@
 #forest {
     width: 100%;
     height: 100%;
-    background: url('./pokeBG.jpg');
+    background: url('https://pokemonrevolution.net/forum/uploads/monthly_2021_08/1.jpg.44063afd1f802b7d88cd157d81547634.jpg.27b8b220e1533ebcc125927e1e767f70.jpg');
     overflow: hidden;
 }
 
@@ -210,6 +210,7 @@
     border: #303030 5px solid;
     color: gray;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
